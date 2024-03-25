@@ -11,7 +11,7 @@ describe('Testar funcionalidades da lista de contatos', () => {
         cy.get('[type="tel"]').type('8399199921')
         cy.get('.adicionar').click()
 
-        cy.get('.sc-iAEyYk > ').should('have.length', 4)
+        cy.get('.contato').should('have.length', 3)
     })
 
     it('Testar remoção de um contato', ()=> {
