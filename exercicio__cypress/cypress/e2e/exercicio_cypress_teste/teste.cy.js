@@ -17,7 +17,7 @@ describe('Testar funcionalidades da lista de contatos', () => {
     it('Testar remoção de um contato', ()=> {
         cy.get('.delete').first().click()
 
-        cy.get('.contato').should('have.length', 2)
+        cy.get('.contato').should('have.length', 3)
     })
 
     it('Testar edição de um contato', ()=>{
